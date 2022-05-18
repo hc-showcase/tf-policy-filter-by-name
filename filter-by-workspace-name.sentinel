@@ -22,5 +22,5 @@ if strings.has_suffix(tfrun.workspace.name, "-aws") is true {
  }
 
 main = rule {
-  comleted is 1
+  completed is 1
 }
