@@ -10,5 +10,9 @@ is_azure = rule when strings.has_suffix(tfrun.workspace.name, "-azure") is true 
 }
 
 main = rule {
-1 is 1
+	if 1 is 1 {
+	print("add")
+	} else {
+	print("asas")
+	}
 }
