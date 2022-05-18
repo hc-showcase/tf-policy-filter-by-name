@@ -10,9 +10,9 @@ is_azure = rule when strings.has_suffix(tfrun.workspace.name, "-azure") is true 
 }
 
 main = rule {
- if strings.has_suffix(tfrun.workspace.name, "-aws") {
+ if strings.has_suffix(tfrun.workspace.name, "-aws") is true {
         print("AWS code")
- } else if strings.has_suffix(tfrun.workspace.name, "-azure") {
+ } else if strings.has_suffix(tfrun.workspace.name, "-azure") is true {
         print("Azure code")
  } else {
         print("Nothing to do")
