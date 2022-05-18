@@ -2,13 +2,6 @@ import "tfrun"
 import "strings"
 
 completed = 0
-is_aws = rule when strings.has_suffix(tfrun.workspace.name, "-aws") is true {
-  print("AWS code")
-}
-
-is_azure = rule when strings.has_suffix(tfrun.workspace.name, "-azure") is true {
-  print("Azure code")
-}
 
 if strings.has_suffix(tfrun.workspace.name, "-aws") is true {
         print("AWS code")
