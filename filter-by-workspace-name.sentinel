@@ -10,6 +10,6 @@ is_azure = rule when strings.has_suffix(tfrun.workspace.name, "-azure") is true 
 }
 
 main = rule {
-    is_aws or is_azure
+    is_aws xor is_azure
 }
 
