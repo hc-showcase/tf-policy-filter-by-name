@@ -17,4 +17,5 @@ main = rule {
  } else {
         print("Nothing to do")
  }
+ return true
 }
